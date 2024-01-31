@@ -1,19 +1,46 @@
 <html>
     <head>
         <style>
-            .fadeIn {
-                animation: fadein 6s linear 4s 1 forwards forwards;
+            .taart {
+                animation: fadein 2s linear 1 forwards;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                z-index: -2;
             }
             @keyframes fadein {
                 0% { opacity: 0; }
+                60% { opacity: 0; }
                 100% { opacity: 1; }
+            }
+            h1 { 
+                font-size: xx-large;
+                padding-left: 40px;
+                background: border-box rgba(255, 255, 255, 0.5);
+             }
+            p { font-size: x-large;
+                padding-left: 40px;
+                background: border-box rgba(255, 255, 255, 0.5);
+             }
+            .ondertekst {
+                animation: fadein 2s linear 1 forwards;
+                position: absolute;
+                bottom: 5%;
+                right: 0;
+                padding-left: 40px;
+                z-index: 0;
+                font-size: x-large;
+                width: 100%;
+                background: border-box rgba(255, 255, 255, 0.5);
             }
         </style>
     </head>
     <body>
-        <div class="fadeIn">
+        <div class="taart">
             <img src="taart.jpeg"/>
         </div>
-        <h1>Lieve Mariska</h1>
+        <h1>Lieve Mariska,</h1>
+        <p>Omdat jij alweer...</p>
+        <p class="ondertekst">...jaar wordt, nodigen <a href="bubbel.html">wij...</a></p>
     </body>
 </html>
